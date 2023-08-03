@@ -1,0 +1,10 @@
+.parent{
+    display: flex;
+    background-color: hsl(257, 27%, 26%);
+    flex-direction: column;
+    align-items: center;
+    padding: 6%;
+    gap: 20px;
+    width: 100vw;
+    color: white;
+}

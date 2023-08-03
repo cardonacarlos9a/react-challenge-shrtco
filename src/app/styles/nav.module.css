@@ -1,0 +1,74 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 2% 6% 0% 6%;
+    background-color: white;
+}
+.drawer{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90vw;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+.signup-button{
+    width: 90%;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-between;
+}
+
+.hamburguer{
+    display: true;
+}
+.desktopNav{
+    display: none;
+}
+
+@media screen and (min-width:535px){
+    .signup-button{
+        width: 5rem;
+    }
+    .drawer{
+        display: none;
+    }
+    .hamburguer{
+        display: none;
+    }
+    .desktopNav{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex: 1;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
+    .title{
+        width: 100%;
+        align-items: center;
+    }
+    .features-pricing-resources{
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+    .loginSignup{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+   
+}

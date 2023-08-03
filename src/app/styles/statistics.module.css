@@ -1,0 +1,81 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #CCCCCC;
+    padding: 6%;
+    padding-top: 1%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: black;
+}
+
+.cardWrapper{
+    display: flex;
+    width: 100%;
+    padding-top: 20%;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    height: 60vw;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2%;
+    padding: 10px;
+}
+.icon{
+    display: flex;
+    border-radius: 100%;
+    background-color: black;
+    width: 6rem;
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 40%;
+    border-radius: 50%; /* Create a round shape */
+    overflow: hidden;
+    padding: 2%;
+    margin-top: -15%;
+}
+.icon img{
+    width: 50%; /* Make the image cover the entire container */
+    
+}
+.verticalLine{
+    border-left: 6px solid hsl(180, 66%, 49%);
+    height: 50px;
+    margin-bottom: -10%;
+}
+.cardsGroup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+@media screen and (min-width:535px){
+    .cardsGroup{
+       flex-direction: row;
+       justify-content: space-between;
+    }
+    .cardWrapper{
+        width: 30%;
+        padding-top: 10%;
+    }
+   .card{
+        width: 25rem;
+        height: 15rem;
+        padding: 10px;
+        color: gray;
+   }
+   .verticalLine{
+        display: none;
+   }
+   
+}

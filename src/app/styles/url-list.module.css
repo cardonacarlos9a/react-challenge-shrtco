@@ -1,0 +1,52 @@
+.parent{
+    display: flex;
+    background-color: #CCCCCC;
+    padding: 6%;
+    padding-top: 3%;
+    color: black;
+    width: 100vw;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    padding: 1%;
+    justify-content: flex-start;
+    color: black;
+    margin-bottom: 6%;
+}
+
+.copyButton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+@media screen and (min-width:376px){
+    .card{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1%;
+    }
+    .halfRightCard{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-end;
+        gap: 2%;
+    }
+    .copyButton{
+        width: 25%;
+    }
+    .parent{
+        padding-top: 0;
+    }
+    .oriUrl{
+        display: flex;
+        width: 40%;
+    }
+}

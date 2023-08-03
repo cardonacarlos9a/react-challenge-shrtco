@@ -1,0 +1,73 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color:rgb(255, 255, 255) ;
+    padding: 0%;
+    color: black;
+    align-items: center;
+    gap: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.headerText{
+    display: flex;
+    flex-direction: column;
+}
+.left-header-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.getStartedButton{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.imageDestop{
+    display: none;
+}
+.getStarted{
+    width: 70%;
+}
+.imageMobile{
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (min-width:376px){
+    .getStarted{
+        display: flex;
+        width: 8rem;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .parent{
+        padding-bottom: 3%;
+        flex-direction: row;
+        justify-content: start;
+        padding-left: 6%;
+        justify-items: flex-end;
+    }
+    .left-header-section{
+        align-items: flex-start;
+    }
+    .getStartedButton{
+        align-items: start;
+        justify-content: start;
+        padding: 0;
+    }
+    .imageMobile{
+        display: none;
+    }
+    .imageDestop{
+        display: flex;
+        width: 40%;
+        flex: 1;
+    }
+
+}
